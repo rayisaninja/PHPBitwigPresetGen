@@ -156,7 +156,7 @@ function bitwigDetectMeta($preset, $config)
         $preset->tags[] = "glide";
     }
 
-    //bestimmte wörter konvertieren
+    //*ugly* convert specific words
     if (preg_match('~Ambient Sounds~', $preset->preset_category)) {
         $preset->preset_category = 'Ambient Sounds';
     }
